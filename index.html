@@ -102,7 +102,7 @@
                             <li class="scrollToLink"><a href="#about">A Propos</a></li>
                             <li class="scrollToLink"><a href="#services">Services</a></li>
                             <li class="scrollToLink"><a href="#project">Réalisations</a></li>
-                            <li class="scrollToLink"><a href="#testimonial">Témoignages</a></li>
+                            <!-- <li class="scrollToLink"><a href="#testimonial">Témoignages</a></li> -->
                             <li class="scrollToLink"><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
@@ -402,7 +402,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="service-two__top__thumb wow fadeInRight" data-wow-duration='1500ms' data-wow-delay='300ms'>
-                            <img src="assets/images/service/service-bg-2-1.jpg" alt="eolimn image">
+                            <img src="assets/images/service/img2.jpg" alt="eolimn image" style="height: 100px !important;">
                         </div>
                     </div>
                 </div>
@@ -417,7 +417,6 @@
                             <p class="service-two__list__text">
                                 Profitez d’une énergie propre et gratuite avec nos installations photovoltaïques clés en main. Nous étudions votre projet (résidentiel ou commercial), optimisons le dimensionnement et installons des équipements haute performance pour un rendement maximal.
                             </p>
-                            <a href="#" class="service-two__list__btn"><span class="icon-arrow-point-to-right"></span></a>
                         </div>
                     </li>
                     <li class="service-two__list__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
@@ -429,7 +428,6 @@
                             <p class="service-two__list__text">
                                 Avant toute installation, nous réalisons une analyse complète de vos besoins et de votre environnement (ensoleillement, toiture, consommation). Notre étude personnalisée vous permet de prendre une décision éclairée avec un retour sur investissement précis.
                             </p>
-                            <a href="#" class="service-two__list__btn"><span class="icon-arrow-point-to-right"></span></a>
                         </div>
                     </li>
                     <li class="service-two__list__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='500ms'>
@@ -441,7 +439,6 @@
                             <p class="service-two__list__text">
                                 Pour garantir la longévité et l’efficacité de votre installation, nous proposons des contrats de maintenance préventive et corrective. Nos techniciens interviennent rapidement pour résoudre toute panne et assurer un fonctionnement optimal.
                             </p>
-                            <a href="#" class="service-two__list__btn"><span class="icon-arrow-point-to-right"></span></a>
                         </div>
                     </li>
                     <li class="service-two__list__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms'>
@@ -453,7 +450,6 @@
                             <p class="service-two__list__text">
                                 Augmentez votre autonomie avec nos systèmes de stockage d’énergie. Stockez l’électricité produite en journée pour l’utiliser la nuit ou lors des pics de consommation, réduisant ainsi votre dépendance au réseau.
                             </p>
-                            <a href="#" class="service-two__list__btn"><span class="icon-arrow-point-to-right"></span></a>
                         </div>
                     </li>
                 </ul>
@@ -542,7 +538,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="project-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
                             <div class="project-card__image">
-                                <img src="assets/images/project/project-2-1.jpg" alt="@@name">
+                                <img src="assets/images/project/img8.jpg" alt="@@name">
                             </div>
                             <div class="project-card__hover">
                                 <div class="project-card__content">
@@ -567,7 +563,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="project-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='700ms'>
                             <div class="project-card__image">
-                                <img src="assets/images/project/project-2-2.jpg" alt="@@name">
+                                <img src="assets/images/project/img5.jpg" alt="@@name">
                             </div>
                             <div class="project-card__hover">
                                 <div class="project-card__content">
@@ -679,21 +675,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="project-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-                                <div class="project-card__image">
-                                    <img src="assets/images/project/img5.jpg" alt="@@name">
-                                </div>
-                                <div class="project-card__hover">
-                                    <div class="project-card__content">
-                                        <span class="project-card__dec">solar energy</span>
-                                        
-
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="item">
                             <div class="project-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
                                 <div class="project-card__image">
@@ -718,7 +700,29 @@
                         <div class="service-contact__bg" style="background-image: url(assets/images/shapes/contact-bg-1-2.png);"></div>
                         <div class="row">
                             <div class="col-lg-7">
-                                <form class="service-contact__form contact-form-validated form-one wow fadeInUp" data-wow-duration="1500ms" action="inc/sendemail.php">
+                                <form class="service-contact__form contact-form-validated form-one wow fadeInUp" data-wow-duration="1500ms" action="sendemail.php" method="POST">
+                                    <div class="form-one__group">
+                                        <div class="form-one__control form-one__control--full">
+                                            <input type="text" name="name" placeholder="Votre nom" required>
+                                        </div>
+                                        <div class="form-one__control form-one__control--full">
+                                            <input type="email" name="email" placeholder="Adresse email" required>
+                                        </div>
+                                        <div class="form-one__control form-one__control--full">
+                                            <input type="text" name="phone" placeholder="Numéro de téléphone" required>
+                                        </div>
+                                        <div class="form-one__control form-one__control--full">
+                                            <textarea name="message" placeholder="Votre message..." required></textarea>
+                                        </div>
+                                        <div class="form-one__control form-one__control--full">
+                                            <button type="submit" class="eolimn-btn eolimn-btn--base">
+                                                Envoyer le message <i class="icon-arrow-point-to-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <!-- <form class="service-contact__form contact-form-validated form-one wow fadeInUp" data-wow-duration="1500ms" action="inc/sendemail.php">
                                     <div class="form-one__group">
                                         <div class="form-one__control form-one__control--full">
                                             <input type="text" name="name" placeholder="Votre nom">
@@ -736,7 +740,7 @@
                                             <button type="submit" class="eolimn-btn eolimn-btn--base">Envoyé le message <i class="icon-arrow-point-to-right"></i></button>
                                         </div>
                                     </div>
-                                </form>
+                                </form> -->
                             </div>
                             <div class="col-lg-5">
                                 <div class="service-contact__left">
@@ -868,7 +872,7 @@
         <!-- FAQS Section End -->
 
         <!-- testimonial Section Start -->
-        <section class="testimonials-one" id="testimonial">
+        <!-- <section class="testimonials-one" id="testimonial">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
@@ -1020,7 +1024,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- testimonial Section End -->
 
        
@@ -1144,12 +1148,10 @@
                         <div class="col-xl-4 col-lg-4 col-md-6">
                             <div class="footer-widget wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
                                 <h4 class="footer-widget__title">A Propos <span>Solar Energy</span></h4>
-                                <p class="footer-widget__text">Lorem ipsum dolor sit amet consectetur adipienda dignissimos tempora, consequuntur, quae iste perspiciatis aperiam fugiat, vero omnis? Officiis perspiciatis illo deserunt voluptates?</p>
+                                <p class="footer-widget__text">        Solar Energy est spécialisée dans les solutions solaires personnalisées. Depuis plus de 9 ans, nous accompagnons particuliers et entreprises vers l’autonomie énergétique grâce à des technologies fiables et écologiques.</p>
                                 <div class="footer-widget__social">
                                     <a href="https://www.facebook.com/oye.samson.9"><i class="icon-facebook" aria-hidden="true"></i></a>
-                                    <a href="https://twitter.com"><i class="icon-twitter" aria-hidden="true"></i></a>
-                                    <a href="https://instagram.com"><i class="icon-social-media" aria-hidden="true"></i></a>
-                                    <a href="https://youtube.com"><i class="icon-youtube" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1172,7 +1174,7 @@
                                     <li class="footer-widget__links__item"><a href="#services">Services</a></li>
                                     <li class="footer-widget__links__item"><a href="#project">Réalisations</a></li>
                                     <li class="footer-widget__links__item"><a href="#testimonial">Témoignages</a></li>
-                                    <li class="footer-widget__links__item"><a href="#contact">Contactez*Nous</a></li>
+                                    <!-- <li class="footer-widget__links__item"><a href="#contact">Contactez*Nous</a></li> -->
                                 </ul>
                             </div>
                         </div>
